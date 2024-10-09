@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('images/hero-background.jpg');
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.characters {
+    padding: 40px;
+}
+
+.character-container {
+    display: flex;
+    gap: 20px;
+}
+
+.character-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.character-card img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.character-card:hover img {
+    transform: scale(1.05);
+}
+
+.cta {
+    text-align: center;
+    padding: 40px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #f00;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.manhwa-carousel {
+    padding: 40px;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .character-container {
+        flex-direction: column;
+    }
+}
